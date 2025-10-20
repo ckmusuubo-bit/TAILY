@@ -1,0 +1,200 @@
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        
+        .sidebar {
+            flex: 1;
+            background-color: #363634;
+            color: white;
+            padding: 30px;
+        }
+        
+        .profile-section {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba(49, 47, 47, 0.2);
+            padding-bottom: 20px;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffab02;
+            margin-bottom: 20px;
+        }
+        
+        .profile-section h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .job-title {
+            font-size: 16px;
+            color: #e0e0e0;
+            font-style: italic;
+        }
+        
+        .sidebar h2 {
+            font-size: 20px;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+        }
+        
+        .sidebar h2::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: #ffab02;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        
+        .contact-info a {
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            color: #ffab02;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+        .skill h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #ffab02;
+        }
+        
+        .sidebar ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .sidebar li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .sidebar li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #ffab02;
+        }
+        
+        .main-content {
+            flex: 2;
+            padding: 40px;
+            background-color: #ffffff;
+        }
+        
+        .main-content h2 {
+            font-size: 24px;
+            color:#393838;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+            position: relative;
+        }
+        
+        .main-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 70px;
+            height: 2px;
+            background-color: #;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        th {
+            background-color: #f5f5f5;
+            text-align: left;
+            padding: 12px 15px;
+            border-bottom: 2px solid #e0e0e0;
+            color: #393838;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        
+        .experience-item {
+            margin-bottom: 30px;
+        }
+        
+        .experience-item h3 {
+            color: #393838;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        
+        .date {
+            color: #393838;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .main-content ul {
+            padding-left: 20px;
+        }
+        
+        .main-content li {
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .sidebar, .main-content {
+                padding: 20px;
+            }
+        }
